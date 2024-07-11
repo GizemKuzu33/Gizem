@@ -59,7 +59,8 @@ class CSCManager(FileManager):
 
         with open(json_file_path,"w",newline="") as json_file:
             json.dump(data,json_file,indent=4)
-        
+
+        # BU FONSİYON EKSİK KALMIS
     def update_value_in_cell(self,file_path:str,value_to_replace:str,new_value:str):
         """
         Değiştirilecek olan degerin konumunu bulacak ve yeni ifade ile değiştirecek olan fonsksiyon.
@@ -67,8 +68,10 @@ class CSCManager(FileManager):
         with open(file_path) as file:
             content = file.read()
         content = content.replace(value_to_replace,new_value)
+
+        #BUG
+    def update_cell_by_ref(self,)
         
-    
     def delete_file(self, file_path:str):
         super().delete_file(file_path)
 
